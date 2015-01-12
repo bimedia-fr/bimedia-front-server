@@ -6,7 +6,7 @@ Bimedia Front-end test server.
 ## features :
 * serve static assets
 * static data fixtures
-* http method to ressource mapping
+* http method to resource mapping
 * proxied data
 * custom test routes
 
@@ -100,14 +100,14 @@ server({
     'static' : {
         path : path.join(__dirname, './src')
     }
-})function (router) {
+}).routes(function (router) {
     router.get(/api\/([0-9]{4}-[0-9]{2}-[0-9]{2})/, function (str) {
         this.res.writeHead(200, {
             'Content-Type': 'text/plain'
         });
         this.res.end(str);
     });
-}.listen(PORT, function () {
+}).listen(PORT, function () {
     console.log('test server listening on port %d', PORT);
 });
 ```
