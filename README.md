@@ -116,3 +116,4 @@ server({
 * [ecstatic](https://github.com/jesusabdullah/node-ecstatic) file server.
 * [union](https://github.com/flatiron/union) http server.
 * [director](https://github.com/flatiron/director) router.
+* [http-proxy](https://github.com/nodejitsu/node-http-proxy) proxy.
