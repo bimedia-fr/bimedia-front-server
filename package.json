@@ -24,6 +24,7 @@
   "dependencies": {
     "director": "^1.2.7",
     "ecstatic": "^0.5.8",
+    "http-proxy": "^1.8.1",
     "union": "^0.4.4"
   }
 }
