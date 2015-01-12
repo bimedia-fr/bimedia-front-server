@@ -1,0 +1,29 @@
+{
+  "name": "bimedia-front-server",
+  "version": "0.0.1",
+  "description": "bimedia front-end test server",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "vows --spec test/**.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bimedia-fr/bimedia-front-server.git"
+  },
+  "keywords": [
+    "bimedia",
+    "front-end",
+    "static"
+  ],
+  "author": "jerome creignou",
+  "license": "Apache V2",
+  "bugs": {
+    "url": "https://github.com/bimedia-fr/bimedia-front-server/issues"
+  },
+  "homepage": "https://github.com/bimedia-fr/bimedia-front-server",
+  "dependencies": {
+    "director": "^1.2.7",
+    "ecstatic": "^0.5.8",
+    "union": "^0.4.4"
+  }
+}
