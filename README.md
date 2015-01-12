@@ -66,7 +66,26 @@ will serve file :
 
 Fixtures can be retrieved from an url. The test server serves proxy data.
 
+Example :
 
+```js
+var server = require('./test-server');
+var path = require('path');
+
+var PORT = 9090;
+
+server({
+    fixtures : {
+        url : 'http://my.remotehost.com/fixtures',
+        prefix : 'api'
+    },
+    'static' : {
+        path : path.join(__dirname, './src')
+    }
+}).listen(PORT, function () {
+    console.log('test server listening on port %d', PORT);
+});
+```
 
 ## custom test routes
 
