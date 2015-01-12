@@ -7,6 +7,7 @@ Bimedia Front-end test server.
 * serve static assets
 * static data fixtures
 * http method to ressource mapping
+* proxied data
 * custom test routes
 
 
@@ -60,6 +61,12 @@ Example:
 will serve file :
 
 `$cwd/auth/token-post.json`
+
+## proxied data
+
+Fixtures can be retrieved from an url. The test server serves proxy data.
+
+
 
 ## custom test routes
 
