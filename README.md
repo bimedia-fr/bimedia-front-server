@@ -87,6 +87,36 @@ server({
 });
 ```
 
+## multiple fixtures sources
+
+Fixtures can be retrieved from more than one location, both locally or remotely
+
+Example :
+
+```js
+var server = require('./test-server');
+var path = require('path');
+
+var PORT = 9090;
+
+server({
+    fixtures : [{
+        url : 'http://my.remotehost.com/fixtures',
+        prefix : 'api'
+    },
+    {
+        path : path.join(__dirname, './fixtures'),
+        prefix : 'api'
+    }
+    ],
+    'static' : {
+        path : path.join(__dirname, './src')
+    }
+}).listen(PORT, function () {
+    console.log('test server listening on port %d', PORT);
+});
+```
+
 ## custom test routes
 
 Add custom route and logic with routes method.
