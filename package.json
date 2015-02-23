@@ -1,6 +1,6 @@
 {
   "name": "bimedia-front-server",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "bimedia front-end test server",
   "main": "lib/index.js",
   "scripts": {
