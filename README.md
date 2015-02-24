@@ -89,7 +89,7 @@ server({
 
 ## multiple fixtures sources
 
-Fixtures can be retrieved from more than one location, both locally or remotely
+Fixtures can be retrieved from more than one location, both locally or remotely.
 
 Example :
 
@@ -102,7 +102,7 @@ var PORT = 9090;
 server({
     fixtures : [{
         url : 'http://my.remotehost.com/fixtures',
-        prefix : 'api'
+        prefix : 'api/params'
     },
     {
         path : path.join(__dirname, './fixtures'),
